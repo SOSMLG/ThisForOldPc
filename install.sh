@@ -14,3 +14,5 @@ micro -plugin install detectindent
 micro -plugin install linter        
 micro -plugin install go            
 micro -plugin install fish
+#oh my bash
+bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
