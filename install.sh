@@ -4,7 +4,7 @@
 #installing the packages 
 sudo apt update
 sudo apt upgrade -yy
-sudo apt install vlc micro thunar libreoffice icewm fastfetch alsa-utils pulseaudio pavucontrol unzip cargo p7zip ntfs-3g eza zoxide vlc gimp imagemagick fzf ffmpeg fonts-firacode fonts-jetbrains-mono fonts-croscore fonts-crosextra-carlito fonts-crosextra-caladea fonts-noto fonts-noto-cjk git falkon -yy
+sudo apt install vlc micro thunar feh libreoffice icewm fastfetch alsa-utils pulseaudio pavucontrol unzip cargo p7zip ntfs-3g eza zoxide vlc gimp imagemagick fzf ffmpeg fonts-firacode fonts-jetbrains-mono fonts-croscore fonts-crosextra-carlito fonts-crosextra-caladea fonts-noto fonts-noto-cjk git falkon -yy
 #micro plugins
 micro -plugin install filemanager  
 micro -plugin install fzf           
