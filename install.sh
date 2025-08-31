@@ -1,6 +1,8 @@
 #backports
 "deb http://deb.debian.org/debian/ trixie-backports main non-free-firmware"
 "deb-src http://deb.debian.org/debian/ trixie-backports main non-free-firmware"
+#32 Bit Architecture
+sudo dpkg --add-architecture i386
 #installing the packages 
 sudo apt update
 sudo apt upgrade -yy
