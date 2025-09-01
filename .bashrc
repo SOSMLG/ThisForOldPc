@@ -159,14 +159,19 @@ source "$OSH"/oh-my-bash.sh
 #
 # aliases
 alias e='micro'
-alias bashrc='nano ~/.bashrc && source ~/.bashrc'
 alias reload='source ~/.bashrc'
-alias ls='eza --icons'
-alias ll='eza -alh --icons --group-directories-first'
-alias la='eza -a --icons'
-alias lt='eza -alh --sort=modified --icons'
-alias tree='eza --tree --icons'
+alias ls='eza '
+alias ll='eza -alh --group-directories-first'
+alias la='eza -a '
+alias lt='eza -alh --sort=modified '
+alias tree='eza --tree '
 alias ..='z ..'
 alias ...='z ../..'
 alias ....='z ../../..'
 alias -- -='z -'     
+
+# Created by `pipx` on 2025-08-26 20:54:56
+export PATH="$PATH:/home/sosmlg/.local/bin"
+
+#reload pywal
+wal -q -R
