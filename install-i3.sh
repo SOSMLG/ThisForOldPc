@@ -43,5 +43,7 @@ mkdir -p "${XDG_CONFIG_HOME:-$HOME/.config}/Thunar"
 cp configs/thunar/uca.xml "${XDG_CONFIG_HOME:-$HOME/.config}/Thunar/uca.xml"
 mkdir -p "${XDG_CONFIG_HOME:-$HOME/.config}/picom"
 cp configs/picom/picom.conf "${XDG_CONFIG_HOME:-$HOME/.config}/picom/picom.conf"
+mkdir -p "${XDG_CONFIG_HOME:-$HOME/.config}/gtk-3.0"
+cp configs/gtk-3.0/settings.ini "${XDG_CONFIG_HOME:-$HOME/.config}/gtk-3.0/settings.ini"
 
 echo ">> Done. Log out and select i3 session."
