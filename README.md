@@ -1,9 +1,82 @@
 # ThisForOldPc
 
-Lightweight i3 (X11) desktop for old and modern hardware.
+![Linux](https://img.shields.io/badge/Linux-desktop%20kit-4EAA25?logo=linux&logoColor=white)
+![X11](https://img.shields.io/badge/Session-X11-3B8EE9)
+![i3](https://img.shields.io/badge/WM-i3-4B7762?logo=i3&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-## Install
+A lightweight i3 setup for old PCs such as the ThinkCentre M58, and for modern
+machines where a small X11 desktop is preferred. It installs a lean package
+set and deploys ready-to-use configs for i3, Neovim, Alacritty, Thunar, picom
+and GTK.
+
+## Quick start
+
+```bash
+git clone https://github.com/SOSMLG/ThisForOldPc.git
+cd ThisForOldPc
 bash install-i3.sh
+```
 
-## Includes
-i3, nvim, alacritty, thunar, picom, gtk dark theme.
+Run as a normal user, not root. The installer escalates individual package
+commands with sudo, or doas when sudo is absent. Set `TFOP_PRIV=doas` to force
+one helper. Log out after the run and choose the i3 session.
+
+## What it does
+
+- Detects `apt`, `dnf`, `pacman` or `zypper`, then installs Xorg, i3, i3status,
+  i3lock, dmenu, xterm, Thunar, Alacritty, Firefox, feh and Neovim.
+- Installs picom only when `lspci` reports a usable GPU.
+- Attempts zram-generator and TLP when the release provides them.
+- Copies configs into `$XDG_CONFIG_HOME` (default `~/.config`), keeping a
+  timestamped backup of each file it replaces.
+
+The script is idempotent: it checks installed packages before calling the
+package manager and can be run again after a config change.
+
+## Options
+
+The installer has no positional arguments. It honors these environment
+variables:
+
+| Variable | Meaning |
+|---|---|
+| `TFOP_PRIV` | Force `sudo` or `doas` as the privilege helper. |
+| `TFOP_SKIP_APT_UPDATE=1` | Skip `apt-get update` on apt systems. |
+| `XDG_CONFIG_HOME` | Override the config destination. |
+
+## Verification
+
+```bash
+bash verify.sh
+```
+
+The verifier is read-only. It checks the installer, the deployed configs and
+the main executables. It prints `PASS`, `WARN` or `FAIL` and exits nonzero only
+when a required repo file is missing.
+
+## Layout
+
+```
+install-i3.sh              main installer
+verify.sh                  read-only end-state verifier
+configs/i3/config          i3 window manager config
+configs/nvim/init.lua      Neovim config
+configs/alacritty/         Alacritty terminal config
+configs/thunar/uca.xml     Thunar custom actions
+configs/picom/picom.conf   optional compositor config
+configs/gtk-3.0/settings.ini GTK dark settings
+AGENTS.md                  project conventions
+```
+
+## License
+
+MIT. See [LICENSE](LICENSE).
+
+## Related repos
+
+- [DebianSway](https://github.com/SOSMLG/DebianSway): Sway on Debian/Devuan.
+- [DevuanSway](https://github.com/SOSMLG/DevuanSway): Sway on Devuan with OpenRC.
+- [DevuanDwm](https://github.com/SOSMLG/DevuanDwm): minimal dwm desktop for Devuan.
+- [Devuan-Kde](https://github.com/SOSMLG/Devuan-Kde): KDE Plasma on Devuan.
+- [XfceMlg](https://github.com/SOSMLG/XfceMlg): XFCE desktop toolkit.
