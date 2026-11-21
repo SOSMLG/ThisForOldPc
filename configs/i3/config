@@ -11,15 +11,15 @@ set $browser firefox
 
 font pango:JetBrainsMono Nerd Font 10
 
-# Catppuccin Mocha colors
-set $base   #1e1e2e
-set $mantle #181825
-set $crust  #11111b
-set $text   #cdd6f4
-set $subtext #a6adc8
-set $accent #f38ba8
-set $surface #313244
-set $red     #f38ba8
+# Graphite-Amber colors
+set $base   #16181D
+set $mantle #202329
+set $crust  #16181D
+set $text   #D8D3C8
+set $subtext #9A9AA2
+set $accent #E8A33D
+set $surface #30343B
+set $red     #E8A33D
 
 client.focused          $accent $mantle $text $accent $accent
 client.focused_inactive $surface $mantle $subtext $surface $surface

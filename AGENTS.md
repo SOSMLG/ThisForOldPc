@@ -1,6 +1,8 @@
 # ThisForOldPc - project instructions
 
 Small, distro-agnostic i3 setup for old PCs and low-resource X11 desktops.
+The default palette is Graphite Amber: graphite `#16181D`, surface `#202329`,
+and amber `#E8A33D`.
 
 ## Entry points
 

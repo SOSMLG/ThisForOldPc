@@ -1,14 +1,15 @@
 # ThisForOldPc
 
-![Linux](https://img.shields.io/badge/Linux-desktop%20kit-4EAA25?logo=linux&logoColor=white)
-![X11](https://img.shields.io/badge/Session-X11-3B8EE9)
-![i3](https://img.shields.io/badge/WM-i3-4B7762?logo=i3&logoColor=white)
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![Linux](https://img.shields.io/badge/Linux-desktop%20kit-202329?logo=linux&logoColor=E8A33D)
+![X11](https://img.shields.io/badge/Session-X11-202329)
+![i3](https://img.shields.io/badge/WM-i3-202329?logo=i3&logoColor=E8A33D)
+![License: MIT](https://img.shields.io/badge/License-MIT-8FB57A.svg)
 
 A lightweight i3 setup for old PCs such as the ThinkCentre M58, and for modern
 machines where a small X11 desktop is preferred. It installs a lean package
 set and deploys ready-to-use configs for i3, Neovim, Alacritty, Thunar, picom
-and GTK.
+and GTK. The default look is Graphite Amber: graphite `#16181D`, surface
+`#202329`, and amber `#E8A33D`.
 
 ## Quick start
 
@@ -83,4 +84,4 @@ MIT. See [LICENSE](LICENSE).
 
 ## Repository standard
 
-This repo follows the SOSMLG standard: [contributing](CONTRIBUTING.md), [security](SECURITY.md), [changelog](CHANGELOG.md). Local workflow: [English guide](https://github.com/SOSMLG/.github/blob/main/docs/GIT_GUIDE.md) / [Arabic guide](https://github.com/SOSMLG/.github/blob/main/docs/GIT_GUIDE.ar.md).
+This repo follows the SOSMLG standard: [contributing](CONTRIBUTING.md), [security](SECURITY.md), [changelog](CHANGELOG.md). Local workflow: [English guide](https://github.com/SOSMLG/.github/blob/main/docs/GIT_GUIDE.md) / [Arabic guide](https://github.com/SOSMLG/.github/blob/main/docs/GIT_GUIDE.ar.md). Visual standard: [theme](https://github.com/SOSMLG/.github/blob/main/docs/THEME.md) / [الطابع البصري](https://github.com/SOSMLG/.github/blob/main/docs/THEME.ar.md).
