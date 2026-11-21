@@ -1,15 +1,17 @@
+![banner](assets/banner.svg)
+
 # ThisForOldPc
 
-![Linux](https://img.shields.io/badge/Linux-desktop%20kit-202329?logo=linux&logoColor=E8A33D)
-![X11](https://img.shields.io/badge/Session-X11-202329)
-![i3](https://img.shields.io/badge/WM-i3-202329?logo=i3&logoColor=E8A33D)
-![License: MIT](https://img.shields.io/badge/License-MIT-8FB57A.svg)
+installs a small i3 desktop for old pcs such as the thinkcentre m58, with configs for i3, neovim, alacritty, thunar, picom and gtk.
 
-A lightweight i3 setup for old PCs such as the ThinkCentre M58, and for modern
-machines where a small X11 desktop is preferred. It installs a lean package
-set and deploys ready-to-use configs for i3, Neovim, Alacritty, Thunar, picom
-and GTK. The default look is Graphite Amber: graphite `#16181D`, surface
-`#202329`, and amber `#E8A33D`.
+[read the quick start](#quick-start)
+
+| | |
+| --- | --- |
+| **package managers** | detects apt, dnf, pacman or zypper before installing anything. |
+| **install** | `bash install-i3.sh` runs as a normal user. package commands escalate with sudo, or doas when sudo is absent. |
+| **configs** | files land in `$XDG_CONFIG_HOME`, with a timestamped backup of each file replaced. |
+| **rerun** | the script checks installed packages and can run again after a config change. |
 
 ## Quick start
 
