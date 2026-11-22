@@ -81,7 +81,12 @@ install_file() {
     log "installed $dst"
 }
 
-install xorg i3-wm i3status i3lock dmenu xterm thunar alacritty firefox feh neovim
+BROWSER_PKG=firefox
+if [ "$PKG" = apt ]; then
+    BROWSER_PKG=firefox-esr
+fi
+
+install xorg i3-wm i3status i3lock dmenu xterm thunar alacritty "$BROWSER_PKG" feh neovim papirus-icon-theme
 
 # Compositor only when a display adapter is visible.
 if command_exists lspci; then
@@ -97,6 +102,7 @@ install zram-generator 2>/dev/null || log "zram-generator not available; skippin
 install tlp 2>/dev/null || log "tlp not available; skipping"
 
 install_file configs/i3/config i3/config
+install_file configs/i3/wallpaper.png i3/wallpaper.png
 install_file configs/nvim/init.lua nvim/init.lua
 install_file configs/alacritty/alacritty.toml alacritty/alacritty.toml
 install_file configs/thunar/uca.xml Thunar/uca.xml
