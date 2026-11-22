@@ -20,6 +20,6 @@ vim.keymap.set("n", "<leader>e", ":Ex<CR>")
 local ok, lsp = pcall(require, "lspconfig")
 if ok then
   lsp.pyright.setup({})
-  lsp.tsserver.setup({})
+  lsp.ts_ls.setup({})
   lsp.clangd.setup({})
 end
