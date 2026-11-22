@@ -1,8 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-label="ThisForOldPc in graphite and amber">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-label="thisforoldpc in graphite and amber">
   <rect width="1200" height="220" rx="10" fill="#16181D"/>
   <rect x="1" y="1" width="1198" height="218" rx="9" fill="none" stroke="#30343B" stroke-width="2"/>
-  <rect x="40" y="44" width="4" height="132" rx="2" fill="#E8A33D"/>
-  <text x="68" y="98" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="40" font-weight="700" fill="#D8D3C8">thisforoldpc</text>
-  <text x="68" y="136" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="18" fill="#9A9AA2">small i3 desktop for old pcs</text>
-  <text x="68" y="166" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="15" fill="#9A9AA2">x11, graphite amber, no systemd requirement.</text>
+  <g stroke="#202329" stroke-width="1"><path d="M60 0V220"/><path d="M120 0V220"/><path d="M180 0V220"/><path d="M240 0V220"/><path d="M300 0V220"/><path d="M360 0V220"/><path d="M420 0V220"/><path d="M480 0V220"/><path d="M540 0V220"/><path d="M600 0V220"/><path d="M660 0V220"/><path d="M720 0V220"/><path d="M780 0V220"/><path d="M840 0V220"/><path d="M900 0V220"/><path d="M960 0V220"/><path d="M1020 0V220"/><path d="M1080 0V220"/><path d="M1140 0V220"/><path d="M1200 0V220"/><path d="M0 55H1200"/><path d="M0 110H1200"/><path d="M0 165H1200"/></g>
+  <path d="M780 24V196" stroke="#30343B" stroke-width="1"/>
+  <g stroke-linecap="square" stroke-linejoin="miter">
+  <rect x="812" y="34" width="336" height="132" rx="8" fill="#202329" stroke="#30343B" stroke-width="2"/>
+  <rect x="828" y="50" width="304" height="100" fill="#16181D" stroke="#30343B" stroke-width="1"/>
+  <g stroke="#30343B" stroke-width="1"><path d="M828 70H1132"/><path d="M828 80H1132"/><path d="M828 90H1132"/><path d="M828 100H1132"/><path d="M828 110H1132"/><path d="M828 120H1132"/><path d="M828 130H1132"/><path d="M828 140H1132"/><path d="M828 150H1132"/><path d="M828 160H1132"/></g>
+  <path d="M846 84H892M846 104H934M846 124H878" stroke="#9A9AA2" stroke-width="4"/>
+  <rect x="902" y="118" width="12" height="12" fill="#30343B"/>
+  <path d="M812 186H1148" stroke="#30343B" stroke-width="2"/>
+  </g>
+  <rect x="40" y="42" width="5" height="136" fill="#E8A33D"/>
+  <text x="64" y="102" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="54" font-weight="700" letter-spacing="-1" fill="#D8D3C8">thisforoldpc</text>
+  <text x="64" y="142" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="17" fill="#9A9AA2">small i3 desktop for old pcs</text>
+  <text x="64" y="170" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="15" fill="#9A9AA2">x11, graphite amber, no systemd requirement.</text>
 </svg>
