@@ -23,7 +23,7 @@ check_file() {
     fi
 }
 
-check_file "installer" "$SCRIPT_DIR/install-i3.sh"
+check_file "installer" "$SCRIPT_DIR/install.sh"
 
 for pair in \
     "i3-config|i3/config" \
