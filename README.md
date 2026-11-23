@@ -9,7 +9,7 @@ installs a small i3 desktop for old pcs such as the thinkcentre m58, with config
 | | |
 | --- | --- |
 | **package managers** | detects apt, dnf, pacman or zypper before installing anything. |
-| **install** | `bash install-i3.sh` runs as a normal user. package commands escalate with sudo, or doas when sudo is absent. |
+| **install** | `bash install.sh` runs as a normal user. package commands escalate with sudo, or doas when sudo is absent. |
 | **configs** | files land in `$XDG_CONFIG_HOME`, with a timestamped backup of each file replaced. |
 | **rerun** | the script checks installed packages and can run again after a config change. |
 
@@ -18,7 +18,7 @@ installs a small i3 desktop for old pcs such as the thinkcentre m58, with config
 ```bash
 git clone https://github.com/SOSMLG/ThisForOldPc.git
 cd ThisForOldPc
-bash install-i3.sh
+bash install.sh
 ```
 
 Run as a normal user, not root. The installer escalates individual package
@@ -61,7 +61,7 @@ when a required repo file is missing.
 ## Layout
 
 ```
-install-i3.sh              main installer
+install.sh              main installer
 verify.sh                  read-only end-state verifier
 configs/i3/config          i3 window manager config
 configs/nvim/init.lua      Neovim config

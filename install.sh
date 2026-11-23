@@ -73,7 +73,8 @@ install_file() {
     [ -f "$src" ] || fail "missing payload: $src"
     mkdir -p "$(dirname "$dst")"
     if [ -e "$dst" ] || [ -L "$dst" ]; then
-        local bak="${dst}.bak.$(date +%Y%m%d-%H%M%S)"
+        local bak
+        bak="${dst}.bak.$(date +%Y%m%d-%H%M%S)"
         cp -a "$dst" "$bak"
         log "backed up $dst to $bak"
     fi

@@ -6,13 +6,13 @@ and amber `#E8A33D`.
 
 ## Entry points
 
-- `install-i3.sh` detects the package manager, installs the package set and
+- `install.sh` detects the package manager, installs the package set and
   deploys configs from `configs/`.
 - `verify.sh` is a read-only end-state check for deployed configs and commands.
 
 ## Conventions
 
-- Run as a normal user. Privilege escalation lives in `install-i3.sh`:
+- Run as a normal user. Privilege escalation lives in `install.sh`:
   explicit `TFOP_PRIV`, then sudo, then doas. Do not add bare sudo calls.
 - Keep `configs/` portable. No hard-coded usernames or home directories.
 - Back up any existing config before replacing it. Re-running the installer
